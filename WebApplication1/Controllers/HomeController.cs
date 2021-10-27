@@ -28,6 +28,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public string Versao()
+        {
+            return string "1.0.0";
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
