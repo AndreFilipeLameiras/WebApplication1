@@ -25,7 +25,14 @@ namespace WebApplication1.Controllers
 
         public IActionResult Privacy()
         {
+
             return View();
+        }
+
+        public string Version()
+        {
+            string versao = "1.0";
+            return versao;
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
